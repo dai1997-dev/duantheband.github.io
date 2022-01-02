@@ -1,0 +1,410 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-family: Arial, Helvetica, sans-serif;
+        scroll-behavior: smooth;
+    }
+    
+    .clear {
+        clear: both;
+    }
+    /* start header */
+    
+    #header {
+        max-width: 100%;
+        height: 46px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 20;
+        background-color: #000;
+    }
+    /* navbar */
+    
+    .navbar {
+        display: inline-block;
+    }
+    
+    .navbar li {
+        display: inline-block;
+        position: relative;
+    }
+    
+    .navbar li:hover .subnav {
+        display: block;
+    }
+    
+    .subnav {
+        position: absolute;
+        background-color: #fff;
+        display: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+    
+    .subnav li {
+        display: block;
+    }
+    
+    .subnav>li>a {
+        color: #000;
+        display: block;
+        padding: 0px 30px;
+        line-height: 48px;
+    }
+    
+    .subnav>li>a:focus {
+        background-color: #fff;
+    }
+    
+    .navbar>li>a {
+        color: #fff;
+        text-transform: uppercase;
+        padding: 0 24px;
+        line-height: 46px;
+    }
+    
+    .navbar li a {
+        text-decoration: none;
+        display: block;
+    }
+    
+    .navbar>li:hover,
+    .subnav>li:hover {
+        color: #fff;
+        background-color: #ccc;
+    }
+    /* search */
+    
+    .search,
+    .mobile-menu-btn {
+        float: right;
+        padding: 0 21px;
+        cursor: pointer;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        line-height: 46px;
+    }
+    
+    .search i {
+        line-height: 46px;
+    }
+    
+    .menu-icon {
+        color: #fff;
+        font-size: 20px;
+        line-height: 46px;
+    }
+    
+    .mobile-menu-btn {
+        background-color: #000;
+    }
+    
+    .mobile-menu-btn:hover {
+        background-color: #ccc;
+    }
+    
+    .mobile-menu-btn:hover .menu-icon {
+        color: #000;
+    }
+    
+    .search:hover {
+        background-color: #f44336;
+    }
+    /* End header */
+    /* Start Slide */
+    
+    .slide {
+        width: 100%;
+        padding-top: 50%;
+        max-height: 800px;
+        margin-top: 46px;
+        background-image: url(/assests/img/slide/slide2.jpg);
+        position: relative;
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    /* .slide-item {
+        width: 100 vw;
+        height: 100vh;
+    }
+    
+    .slide-item1 {
+        background-image: url(/assests/img/slide/slide1.jpg);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .slide-item2 {
+        background-image: url(/assests/img/slide/slide2.jpg);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .slide-item3 {
+        background-image: url(/assests/img/slide/slide3.jpg);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .owl-prev {
+        position: absolute;
+        font-size: 100px !important;
+        color: #555 !important;
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%);
+    }
+    
+    .owl-next {
+        position: absolute;
+        font-size: 100px !important;
+        color: #555 !important;
+        top: 50%;
+        right: 0%;
+        transform: translateY(-50%);
+    }
+    
+    .owl-next:hover {
+        background: none !important;
+        color: #fff !important;
+    }
+    
+    .owl-prev:hover {
+        background: none !important;
+        color: #fff !important;
+    }
+    
+    .owl-dots {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .owl-dots {
+        display: none;
+    }
+    
+    .owl-nav {
+        display: none;
+    } */
+    
+    @keyframes animate {
+        0% {
+            background-position-x: 0;
+        }
+        100% {
+            background-position-x: 100rem;
+        }
+    }
+    /* End Slide */
+    /* Start content */
+    /* about section  */
+    
+    .text-content {
+        position: absolute;
+        bottom: 39px;
+        color: #ccc;
+        left: 50%;
+        z-index: 10;
+        transform: translate(-50%);
+        text-align: center;
+    }
+    
+    .text-heading {
+        font-weight: 700;
+        font-size: 24px;
+    }
+    
+    .text-descirition {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+    
+    .content-section {
+        width: 800px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 64px 0px 112px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .section-heading {
+        font-size: 25px;
+        letter-spacing: 14px;
+        text-align: center;
+    }
+    
+    .about-text {
+        margin-top: 25px;
+        line-height: 1.6;
+        text-align: justify;
+    }
+    
+    .section-sup-heading {
+        font-size: 15px;
+        font-style: italic;
+        text-align: center;
+        margin-top: 25px;
+        opacity: 0.6;
+    }
+    
+    .member-list {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        display: flex;
+    }
+    
+    .member-item {
+        text-align: center;
+    }
+    
+    .member-item--name {
+        font-size: 20px;
+    }
+    
+    .member-item--img {
+        opacity: 10;
+        width: 170px;
+        border-radius: 50%;
+        margin-top: 15px;
+    }
+    /* Tour section */
+    
+    .tour-section {
+        background-color: #2D2D30;
+        width: 100%;
+    }
+    
+    .text-white {
+        color: white !important;
+    }
+    
+    .ticket-list {
+        background-color: #fff;
+        margin-top: 40px;
+    }
+    
+    .ticket-list li {
+        list-style-type: none;
+        font-size: 15px;
+        color: #757575;
+        padding: 11px 16px;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .sold-out {
+        background-color: #f44336;
+        padding: 3px 4px;
+        color: #fff;
+        margin-left: 16px;
+    }
+    
+    .quanlity {
+        float: right;
+        width: 24px;
+        height: 24px;
+        background-color: #000;
+        color: #fff;
+        border-radius: 50%;
+        line-height: 24px;
+        text-align: center;
+        margin-top: -2px;
+    }
+    
+    .place-list {
+        margin-top: 32px;
+    }
+    
+    .place-img {
+        width: 100%;
+        display: block;
+    }
+    
+    .place-img:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+    
+    .place-body {
+        background-color: #FFF;
+        padding: 16px;
+        font-size: 15px;
+    }
+    
+    .place-body--heading {
+        font-size: 15px;
+        font-weight: 1000;
+    }
+    
+    .place-body-datetime {
+        margin-top: 15px;
+    }
+    
+    .place-body-content {
+        margin-top: 15px;
+        line-height: 1.4;
+    }
+    /* Contact section */
+    
+    .form-control {
+        padding: 10px;
+        border: 1px solid #ccc;
+        width: 100%;
+    }
+    
+    .form-submit-btn {
+        color: #fff;
+        background-color: #000;
+        font-size: 11px;
+        border: 1px solid #000;
+        padding: 10px 16px;
+        width: 65px;
+        cursor: pointer;
+    }
+    /* map */
+    
+    .map-section img {
+        width: 100%;
+    }
+    /* footer */
+    
+    .footer {
+        text-align: center;
+        padding: 64px 16px;
+        font-size: 15px;
+        color: #000;
+    }
+    
+    .social-list a {
+        text-decoration: none;
+        font-size: 22px;
+        color: rgba(0, 0, 0, 0.8);
+        font-weight: 600;
+    }
+    
+    .social-list a :hover {
+        opacity: 0.8;
+    }
+    
+    .social-link {
+        color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .social-text {
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.8);
+        padding: 20px 0px;
+    }

@@ -1,0 +1,29 @@
+/* hàng */
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+
+/* cột*/
+
+.col {
+    float: left;
+    padding: 0px 8px;
+}
+
+
+/* giao diện 3 cột */
+
+.col-3 {
+    width: 33.33333%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}

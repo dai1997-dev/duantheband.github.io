@@ -1,0 +1,91 @@
+        /* Pc */
+        
+        @media (min-width:1024px) {
+            .mobile-menu-btn {
+                display: none;
+            }
+        }
+        /* tablet */
+        
+        @media (max-width:1024px) and (min-width:740px) {
+            .mobile-menu-btn {
+                display: none;
+            }
+            .social-list a {
+                font-size: 26px;
+                padding: 0px 6px;
+            }
+            .social-text {
+                font-size: 24px;
+            }
+        }
+        /* mobie */
+        
+        @media (max-width:740px) {
+            .navbar {
+                display: block;
+            }
+            .navbar>li {
+                display: block;
+            }
+            .navbar>li>a:first-child {
+                display: inline-block;
+            }
+            .search {
+                display: none;
+            }
+            .mobile-menu-btn {
+                display: block;
+            }
+            #header {
+                overflow: hidden;
+            }
+            .subnav {
+                position: initial;
+                background-color: #333;
+            }
+            .subnav li a {
+                color: #fff;
+                padding: 5px 52px;
+            }
+            .navbar>li:hover,
+            .subnav>li:hover {
+                color: #fff;
+                background-color: #000;
+            }
+            .member-item-mobie {
+                margin-top: 30px;
+            }
+            .s-coll-full {
+                width: 100%;
+            }
+            .member-list {
+                margin-top: 60px;
+                margin-bottom: 60px;
+                display: block;
+            }
+            .member-item--name {
+                font-size: 16px;
+            }
+            .member-item--img {
+                opacity: 10;
+                width: 60%;
+                margin-top: 15px;
+                border-radius: 4px;
+            }
+            .content-section-mobie {
+                width: 100%;
+            }
+            .contact-form {
+                margin-top: 16px;
+            }
+            .btn {
+                margin-top: 32px;
+            }
+            .contact-form {
+                margin-top: 32px;
+            }
+            .contact-info {
+                line-height: 2;
+            }
+        }
