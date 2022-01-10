@@ -19,7 +19,6 @@ for (const buyBtn of buyBtns) {
 modalClose.addEventListener('click', hidebuyticket)
 modal.addEventListener('click', hidebuyticket)
 modalContainer.addEventListener('click', function(event) {
-    b
     event.stopPropagation()
 })
 var header = document.getElementById('header');
